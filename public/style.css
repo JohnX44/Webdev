@@ -1,0 +1,429 @@
+/* Hero */
+.heroimg{
+    border-radius: 3%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image scales to fit */
+    box-shadow: 40px 30px 0px #D71313;
+    width: 390px;
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+body {
+    background-color: #FFFFFF; /* White background */
+    color: #000000; /* Black text */
+}
+/* Ensure footer stays at the bottom */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Allow main content to expand, pushing footer to bottom */
+}
+
+h1, .navbar-brand {
+    color: #000000; /* Black main headings and navbar brand */
+}
+/* Reduce font size for more compact content */
+h1, .display-5 {
+    font-size: 1.75rem; /* Smaller heading size */
+}
+
+.lead {
+    font-size: 1rem; /* Smaller lead text size */
+}
+
+p {
+    color: rgb(204, 187, 187); /* Light black for paragraph text */
+}
+
+/* Gradient Background and Shadow for Navbar */
+.navbar {
+    background: linear-gradient(135deg, #D71313, #D71313);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 15px 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Main Brand Styling with Hover Effect */
+.main-brand {
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.sub-brand {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #ffeaea;
+    margin-left: 5px;
+}
+
+.main-brand:hover {
+    color: #ffeaea;
+}
+
+/* Navbar Link Styling */
+
+/* Navbar Background with Subtle Shadow */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    padding: 12px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Brand Styling: White Text with Red Outline */
+.brand-main, .brand-sub {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #ffffff;
+    -webkit-text-stroke: 1px #D71313; /* Red outline */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: -webkit-text-stroke 0.3s ease, color 0.3s ease;
+}
+
+.brand-main:hover,
+.brand-sub:hover {
+    -webkit-text-stroke: 1px #B22222; /* Darker red outline on hover */
+}
+
+/* Navbar Links with Underline Animation */
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    margin-right: 15px;
+    padding: 5px;
+    position: relative;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+
+/* Animated Underline Effect */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #D71313;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #D71313;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Minimalist Toggler */
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(51, 51, 51, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+    transform: rotate(90deg);
+}
+
+/* Collapsible Dropdown with Fade-in Effect */
+.collapse {
+    background-color: #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease forwards;
+    padding: 15px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Mobile Links with Button Style */
+@media (max-width: 991px) {
+    .collapse .nav-link {
+        padding: 10px 15px;
+        font-size: 1.1rem;
+        color: #333;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        margin: 5px 0;
+    }
+
+    .collapse .nav-link:hover {
+        background-color: rgba(215, 19, 19, 0.1);
+        color: #D71313;
+    }
+}
+
+/* Navbar Link Styling */
+
+
+
+
+
+/* Footer Styles with Monochromatic Red Palette */
+footer {
+    background-color: #D71313; /* Dark red for footer background */
+    color: white; /* Light red/pink for footer text */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Social media icons */
+.social-icons a {
+    color: white; /* Light red/pink for icons */
+    transition: color 0.3s;
+}
+
+/* Hover effect */
+.social-icons a:hover {
+    color: #FF6347; /* Lighter red on hover (tomato color) */
+}
+.btnhero{
+    background-color: #D71313 !important; /* Red background */
+    color: #FFFFFF !important;            /* White text */
+    border: none;                         /* Remove border */
+}
+.btnhero:hover,
+.btnhero:focus {
+    background-color: #B22222 !important; /* Darker red on hover/focus */
+    color: #FFFFFF !important;            /* Keep text white */
+}
+
+/* Hero */
+
+
+/* Services */
+
+.services-section {
+    padding: 50px 0;
+    background: linear-gradient(135deg, #ffffff, #FFFFFF);
+}
+
+.section-title {
+    color: #D71313;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+/* Service Box Styling */
+.service-box {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #D71313;
+}
+
+.service-box:hover {
+    transform: translateX(10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    border-left: 5px solid #ff5656;
+}
+
+/* Icon Styling */
+.service-icon {
+    font-size: 40px;
+    color: #FFFFFF;
+    background-color: #D71313;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(215, 19, 19, 0.3);
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover .service-icon {
+    transform: scale(1.1);
+    background-color: #ff5656;
+}
+
+/* Text Styling */
+.service-content {
+    flex: 1;
+}
+
+.service-title {
+    font-size: 1.6rem;
+    color: #D71313;
+    font-weight: 600;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.service-box:hover .service-title {
+    color: #ff5656;
+}
+
+.service-description {
+    color: #555;
+    font-size: 1rem;
+    margin-top: 8px;
+    line-height: 1.6;
+}
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+    .service-box {
+        min-height: 180px;
+    }
+}
+/* Services */
+
+
+
+/* Careers */
+.careers-section {
+    padding: 48px 0;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    text-align: left;
+}
+
+.section-title {
+    color: #D71313;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: left;
+}
+
+/* Title underline effect */
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #D71313;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: width 0.4s ease;
+}
+
+.section-title:hover::after {
+    width: 120px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.career-info-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #D71313;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Box hover effect */
+.career-info-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.career-title {
+    color: #D71313;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.career-description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Benefits list with icon and spacing */
+.career-benefits {
+    list-style: none;
+    padding: 0;
+}
+
+.career-benefits li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.career-benefits i {
+    color: #D71313;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.apply-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #D71313, #ff5656);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(215, 19, 19, 0.3);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.apply-btn:hover {
+    background: linear-gradient(135deg, #ff5656, #D71313);
+    box-shadow: 0 6px 15px rgba(215, 19, 19, 0.4);
+}
+/* Careers */
+
+
+
+
+
+
+
+
+
