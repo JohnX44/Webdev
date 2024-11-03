@@ -2,9 +2,8 @@ import express from 'express';
 import path from 'path';
 import expressLayouts from 'express-ejs-layouts';
 import { fileURLToPath } from 'url';
-
 const app = express();
-const port = process.env.PORT || 3000; // Vercel will assign a PORT
+const port = process.env.PORT || 3000;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
